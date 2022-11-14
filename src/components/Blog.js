@@ -3,33 +3,42 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import { Button, CardActionArea, CardActions } from '@mui/material';
+import { Button, CardActionArea, CardActions} from '@mui/material';
 
-export default function MultiActionAreaCard() {
+export default function Blog({blog}) {
   return (
-    <Card sx={{ maxWidth: 345 }}>
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          height="140"
-          image="/static/images/cards/contemplative-reptile.jpg"
-          alt="green iguana"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            Lizard
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-      <CardActions>
-        <Button size="small" color="primary">
-          Share
-        </Button>
-      </CardActions>
-    </Card>
+   <div className='blog-item'>
+        <Card sx={{ maxWidth: 345, height: 410, display: "flex", flexDirection: "column",
+    justifyContent: "space-between"}}>
+        <CardActionArea>
+            <CardMedia
+            component="img"
+            height="140"
+            image={blog.thumbnail}
+            alt="green iguana"
+            />
+            <CardContent>
+            <Typography gutterBottom variant="h5" component="div">
+                {blog.title}
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+                {blog.discipline}
+            </Typography>
+            <Typography variant="body2" color="text.secondary" sx={{height: 100, overflow: "scroll"}}>
+                By: {blog.author}
+                <br></br>
+                <br></br>
+                {blog.description}
+            </Typography>
+            </CardContent>
+        </CardActionArea>
+        <CardActions>
+            <Button size="small" color="primary" href={blog.link} target='_blank'>
+            Read
+            </Button>
+        </CardActions>
+        </Card>
+
+    </div>
   );
 }

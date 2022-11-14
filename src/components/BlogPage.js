@@ -2,15 +2,12 @@ import React, {useState, useEffect} from 'react'
 import SideBar from './Sidebar'
 import BlogForm from './BlogForm'
 import BlogList from './BlogList'
-export default function BlogPage() {
-    const [blogs, setBlogs] = useState([])
 
-    use
-
+export default function BlogPage({blogs}) {
+   
     return(
         <div className='blog-page'>
-            <SideBar/>
-            <BlogList/>
+            <BlogList blogs={blogs}/>
         </div>
     )
 }

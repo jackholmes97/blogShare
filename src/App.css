@@ -13,6 +13,17 @@
   }
 }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog-item{
+  margin: 20px
+}
+.blog-list{
+  align-items: center;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
