@@ -1,0 +1,165 @@
+{
+    "blogs" : [
+        {
+            "id" : 1,
+            "thumbnail" : "https://res.cloudinary.com/practicaldev/image/fetch/s--qo_Wp38Z--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/e0nl7ziy1la7bpwj7rsp.png",
+            "title" : "What is a JavaScript Query Selector",
+            "preview": "When I first started learning about how to interact with the Document Object Model (DOM) in JavaScript, I was very intimidated.",
+            "discipline" : "Software Engineer",
+            "link": "https://medium.com/@abeanadu/what-is-a-javascript-query-selector-11940ffa0f8d",
+            "author" : "Abena Adu",
+            "platform": "Medium"
+
+        },
+        {
+            "id" : 2,
+            "thumbnail" : "https://res.cloudinary.com/practicaldev/image/fetch/s--qo_Wp38Z--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/e0nl7ziy1la7bpwj7rsp.png",
+            "title" : "Click On Me To See What Takes Place",
+            "description": "For someone who doesn’t come from a background of tech, it was very difficult for me in the beginning. I always had an interest on how things work on our phones, computers, tablets, etc.",
+            "discipline" : "Software Engineer",
+            "link": "https://medium.com/@alieladma2000/click-on-me-to-see-what-takes-place-db55dec8fc67",
+            "author" : "Ali Eladma",
+            "platform": "Medium"
+        },
+        {
+            "id" : 3,
+            "thumbnail" : "https://res.cloudinary.com/practicaldev/image/fetch/s--qo_Wp38Z--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/e0nl7ziy1la7bpwj7rsp.png",
+            "title" : "API, What?",
+            "description": "One of the first lessons I have learned during my time in coding bootcamp is coders love to shorten everything. “A lazy coder is a good coder” gets tossed around from time to time",
+            "discipline" : "Software Engineer",
+            "link": "https://medium.com/@availinggiraffe/api-what-b675ee082610",
+            "author" : "Andrew Thalheimer",
+            "platform": "Medium"
+        },
+        {
+            "id" : 4,
+            "thumbnail" : "https://res.cloudinary.com/practicaldev/image/fetch/s--qo_Wp38Z--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/e0nl7ziy1la7bpwj7rsp.png",
+            "title" : "Fetch From A Total Beginner",
+            "description": "We’ve all used the internet by this point and know that theres a lot of info out there, but have you ever wondered how the internet finds the info you’re looking for?",
+            "discipline" : "Software Engineer",
+            "link": "https://medium.com/@robotking134/fetch-from-a-total-beginner-e94e73c5c434",
+            "author" : "Angel Marte",
+            "platform": "Medium"
+        },
+        {
+            "id" : 5,
+            "thumbnail" : "https://res.cloudinary.com/practicaldev/image/fetch/s--qo_Wp38Z--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/e0nl7ziy1la7bpwj7rsp.png",
+            "title" : "F is For Functions",
+            "description": "For someone without a tech background that is trying to learn how to code, it can be very overwhelming. One thing that I have found to be a struggle but am now able to understand are functions",
+            "discipline" : "Software Engineer",
+            "link": "https://medium.com/@nardlearnstocode/f-is-for-functions-204fe13d08fe",
+            "author" : "Bernard Legaspi",
+            "platform": "Medium"
+        },
+        {
+            "id" : 6,
+            "thumbnail" : "https://res.cloudinary.com/practicaldev/image/fetch/s--qo_Wp38Z--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/e0nl7ziy1la7bpwj7rsp.png",
+            "title" : "Scope",
+            "description": "As a new software developer, there have been several times when my code in JavaScript does not work and at first I am very puzzled as to why. In these instances it ended up being an issue of scope",
+            "discipline" : "Software Engineer",
+            "link": "https://medium.com/@elainedoud/scope-e0d0a031ef6d",
+            "author" : "Elaine Doud",
+            "platform": "Medium"
+        },
+        {
+            "id" : 7,
+            "thumbnail" : "https://res.cloudinary.com/practicaldev/image/fetch/s--qo_Wp38Z--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/e0nl7ziy1la7bpwj7rsp.png",
+            "title" : "Debugging And Errors For Beginners",
+            "description": "It’s crazy to think that a simple comma could be the culprit of a whole web page not running? So simple yet so detrimental to the basic functioning of all your hard work.",
+            "discipline" : "Software Engineer",
+            "link": "https://medium.com/@elisasituhuang/javascript-debugging-and-error-messages-for-beginners-7ab50dc86c",
+            "author" : "Elisa Situ Huang",
+            "platform": "Medium"
+        },
+        {
+            "id" : 8,
+            "thumbnail" : "https://res.cloudinary.com/practicaldev/image/fetch/s--qo_Wp38Z--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/e0nl7ziy1la7bpwj7rsp.png",
+            "title" : "Emily Daniels",
+            "description": "I can’t be the only one who reacted with raised eyebrows upon first hearing of this concept, especially as a relatively new software engineering student.",
+            "discipline" : "Software Engineer",
+            "link": "https://medium.com/@emelizadaniels/dom-manipulation-what-is-it-exactly-1eb7abb07a25",
+            "author" : "Emily Daniels",
+            "platform": "Medium"
+        },
+        {
+            "id" : 9,
+            "thumbnail" : "https://res.cloudinary.com/practicaldev/image/fetch/s--qo_Wp38Z--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/e0nl7ziy1la7bpwj7rsp.png",
+            "title" : "A CSS Animation",
+            "description": "There is something about this animation and many like it that I enjoy working on and they take very little code to get it up and running. This animation is an HTML boilerplate with an added div with CSS styling.",
+            "discipline" : "Software Engineer",
+            "link": "https://medium.com/@erikrussells/a-css-animation-1d5cc111c5a5",
+            "author" : "Erik Russell",
+            "platform": "Medium"
+        },
+        {
+            "id" : 10,
+            "thumbnail" : "https://res.cloudinary.com/practicaldev/image/fetch/s--qo_Wp38Z--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/e0nl7ziy1la7bpwj7rsp.png",
+            "title" : "The Beauty of HTML, CSS, and Javascript",
+            "description": "Having come previously from the design field, I was always frustrated with the complication of names for different types of design and how everyone has different definitions of what each type of design entails",
+            "discipline" : "Software Engineer",
+            "link": "https://medium.com/@esclark/the-beauty-of-html-css-and-javascript-b2159ed28f1b",
+            "author" : "Ethan Clark",
+            "platform": "Medium"
+        },
+        {
+            "id" : 11,
+            "thumbnail" : "https://res.cloudinary.com/practicaldev/image/fetch/s--qo_Wp38Z--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/e0nl7ziy1la7bpwj7rsp.png",
+            "title" : "My First Flatiron School Project",
+            "description": "Hello Internet! My name is Jack Holmes and I am an aspiring Software Developer living in Brooklyn, NY. This past October I began an adventure that has been several years in the making, that adventure being starting to learn coding at Flatiron School.",
+            "discipline" : "Software Engineer",
+            "link": "https://medium.com/@jdholmes48/my-first-flatiron-school-project-ac7bd157549c",
+            "author" : "Jack Holmes",
+            "platform": "Medium"
+        },
+        {
+            "id" : 12,
+            "thumbnail" : "https://res.cloudinary.com/practicaldev/image/fetch/s--qo_Wp38Z--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/e0nl7ziy1la7bpwj7rsp.png",
+            "title" : "Javascript Event Listeners",
+            "description": "When I first began my journey in changing careers I felt a lot of stress and anxiety. That feeling only got worse my first day of Software Engineering bootcamp.",
+            "discipline" : "Software Engineer",
+            "link": "https://dev.to/m_shkreli21/javascript-event-listeners-3h41",
+            "author" : "Mark Shkreli",
+            "platform": "Dev"
+        },
+        {
+            "id" : 13,
+            "thumbnail" : "https://res.cloudinary.com/practicaldev/image/fetch/s--qo_Wp38Z--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/e0nl7ziy1la7bpwj7rsp.png",
+            "title" : "Fetch and HTTP Methods",
+            "description": "The fetch() method is a useful tool if you want to use third-party APIs in your website or if you created your own .json file and want to use data from there.",
+            "discipline" : "Software Engineer",
+            "link": "https://medium.com/@polyakovmaxim05/fetch-and-http-methods-7cc6f1a43e8d",
+            "author" : "Maxim Polyakov",
+            "platform": "Medium"
+        },
+        {
+            "id" : 14,
+            "thumbnail" : "https://res.cloudinary.com/practicaldev/image/fetch/s--qo_Wp38Z--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/e0nl7ziy1la7bpwj7rsp.png",
+            "title" : "Building Story Telling Applications in JS",
+            "description": "Over the past year, I’ve been teaching myself programming skills in order to become a Software Engineer.",
+            "discipline" : "Software Engineer",
+            "link": "https://dreammachine.work/building-story-telling-applications-in-javascript-with-apis-flatiron-school-project-one-ede7f3648111",
+            "author" : "Raman Mama",
+            "platform": "Medium"
+        },
+        {
+            "id" : 15,
+            "thumbnail" : "https://res.cloudinary.com/practicaldev/image/fetch/s--qo_Wp38Z--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/e0nl7ziy1la7bpwj7rsp.png",
+            "title" : "INTERACTION BETWEEN HTML AND DOM",
+            "description": "Generally, webpage creation requires these three essential tools HTML, CSS, and JavaScript.",
+            "discipline" : "Software Engineer",
+            "link": "https://medium.com/@richmondnkansah/interaction-between-html-and-dom-8606d2be1024",
+            "author" : "Richmond Nkansah",
+            "platform": "Medium"
+        },
+        {
+            "id" : 16,
+            "thumbnail" : "https://res.cloudinary.com/practicaldev/image/fetch/s--qo_Wp38Z--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/e0nl7ziy1la7bpwj7rsp.png",
+            "title" : "CSS Flexbox",
+            "description": "What is CSS? CSS stands for Cascading Style Sheet. It is very straightforward but also tricky at the same time. The topic I want to write about is CSS Flexbox.",
+            "discipline" : "Software Engineer",
+            "link": "https://medium.com/@wyf990505/css-flexbox-28c9df7a3dcd",
+            "author" : "Yifei Wu",
+            "platform": "Medium"
+        }
+    ]
+}
