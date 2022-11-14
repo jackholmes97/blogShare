@@ -15,7 +15,15 @@ function App() {
           .then(data => setBlogs(data))
   }, [])
 
-  console.log(blogs)
+  function addBlog(newBlog) {
+      fetch('http://localhost:3000/blogs',{
+      method: 'POST',
+      headers: {"content-type": "application/json"},
+      body: JSON.stringify(newBlog)
+      })
+      .then(response => response.json())
+      .then(data => setBlogs([...blogs, data]))
+  }
 
   return (
     <div className="App">
@@ -23,7 +31,7 @@ function App() {
       <Routes>
         <Route path="/" element={<BlogPage blogs={blogs}/>} />
         <Route path="/about" element={<About/>}/>
-        <Route path="/blogform" element={<BlogForm/>}/>
+        <Route path="/blogform" element={<BlogForm addBlog={addBlog}/>}/>
       </Routes>
     </div>
   );
