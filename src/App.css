@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+
 }
 
 .App-logo {
@@ -18,12 +19,14 @@
   justify-content: space-between;
 }
 
-.blog-item{
+.blog-item {
   margin: 20px
 }
-.blog-list{
+
+.blog-list {
   align-items: center;
 }
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -43,7 +46,27 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.new-blog-container {
+  width: 600px;
+  height: 500px;
+  padding: 20px;
+  border: 5px solid rgb(0, 188, 221, 0.5);
+  margin: auto;
+  align-content: center;
+  background-color: rgba(33, 150, 243);
+  border-radius: 20px;
+}
+
+.MuiFormControl-root {
+  font-size:large;
+  width: 95%;
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 10px;
 }

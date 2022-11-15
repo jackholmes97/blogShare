@@ -1,4 +1,8 @@
 import React, { useState } from 'react';
+import Box from '@mui/material/Box';
+import TextField from '@mui/material/TextField';
+import { MenuItem } from '@mui/material';
+import Button from '@mui/material/Button';
 
 function BlogForm({addBlog}) {
 
@@ -6,7 +10,7 @@ function BlogForm({addBlog}) {
     const [blogAuthor, setBlogAuthor] = useState("")
     const [blogDescription, setBlogDescription] = useState("")
     const [blogURL, setBlogURL] = useState("")
-    const [blogThumbnail, setBlogThumbnail] = useState("https://res.cloudinary.com/practicaldev/image/fetch/s--qo_Wp38Z--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/e0nl7ziy1la7bpwj7rsp.png")
+    const [blogThumbnail, setBlogThumbnail] = useState("")
     const [blogDiscipline, setBlogDiscipline] = useState("all")
     const [blogPhase, setBlogPhase] = useState("all")
 
@@ -59,28 +63,32 @@ function BlogForm({addBlog}) {
     return (
         <div className='new-blog-post'>
         <h3>New Blog Post</h3>
+        <div className= "new-blog-container">
         <form onSubmit={handleSubmit}>
-            <input type="text" name="Blog Title" placeholder="Blog Title" value={blogTitle} onChange={addBlogTitle}/>
-            <input type="text" name="Blog Description" placeholder="Blog Description" value={blogDescription} onChange={addBlogDescription}/>
-            <input type="text" name="Author" placeholder="Author" value={blogAuthor} onChange={addBlogAuthor}/>
-            <input type="text" name="Blog URL" placeholder="Blog URL" value={blogURL} onChange={addBlogURL}/>
-            <input type="text" name="Thumbnail" placeholder={"https://res.cloudinary.com/practicaldev/image/fetch/s--qo_Wp38Z--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/e0nl7ziy1la7bpwj7rsp.png"} value={blogThumbnail} onChange={addBlogThumbnail}/>
-            <select value={blogDiscipline} onChange={addBlogDiscipline}>
-                <option value="all">Select Discipline</option>
-                <option value="Software Engineer">Software Engineering</option>
-                <option value="Data Science">Data Science</option>
-                <option value="UI/UX Design">UI/UX Design</option>
-                <option value="CyberSecurity">Cyber Security</option>
-            </select>
-            <select value={blogPhase} onChange={addBlogPhase}>
-                <option value="all">Select Phase</option>
-                <option value="Phase 1">Phase 1</option>
-                <option value="Phase 2">Phase 2</option>
-                <option value="Phase 3">Phase 3</option>
-                <option value="Phase 4">Phase 4</option>
-            </select>
-            <button type="submit">Add New Blog Post</button>
+            <TextField sx={{ m: 1 }} className = "form-input" id="margin-normal" label="Blog Title" placeholder="Enter Title..." value={blogTitle} onChange={addBlogTitle}/>
+            <TextField sx={{ m: 1}} className = "form-input" label="Blog Description" placeholder="Enter Description..." value={blogDescription} onChange={addBlogDescription}/>
+            <TextField sx={{ m: 1}} className = "form-input" label="Author" placeholder="Enter Author..." value={blogAuthor} onChange={addBlogAuthor}/>
+            <TextField sx={{ m: 1 }} className = "form-input" label="Blog URL" placeholder="Enter URL..." value={blogURL} onChange={addBlogURL}/>
+            <TextField sx={{ m: 1 }} className = "form-input" id="margin-normal" label="Thumbnail" placeholder="Enter Thumbnail..." value={blogThumbnail} onChange={addBlogThumbnail}/>
+            <Box sx={{ p: 0.5 , m: 0.5, display: 'flex' }}>
+            <TextField sx={{ m: 0.5}} className="form-dropdown" id="margin-none" select value={blogDiscipline} onChange={addBlogDiscipline} helperText='Please select your discipline' >
+                <MenuItem value="all" label="all">Select Discipline</MenuItem>
+                <MenuItem value="Software Engineer" label="Software Engineer">Software Engineer</MenuItem>
+                <MenuItem value="Data Science" label="Data Science">Data Science</MenuItem>
+                <MenuItem value="UI/UX Design" label="UI/UX Design">UI/UX Design</MenuItem>
+                <MenuItem value="CyberSecurity" label="Cyber Security">CyberSecurity</MenuItem>
+            </TextField>
+            <TextField sx={{ m: 0.5}} className= "form-dropdown" select value={blogPhase} onChange={addBlogPhase} helperText="Please select your phase">
+                <MenuItem value="all">Select Phase</MenuItem>
+                <MenuItem value="Phase 1">Phase 1</MenuItem>
+                <MenuItem value="Phase 2">Phase 2</MenuItem>
+                <MenuItem value="Phase 3">Phase 3</MenuItem>
+                <MenuItem value="Phase 4">Phase 4</MenuItem>
+            </TextField>
+            </Box>
+            <Button sx={{ m: 1, p: 1, backgroundColor: "none", color: 'white', borderColor: 'white' }} className= "form-button" variant='outlined' type="submit">Add New Blog Post</Button>
         </form>
+        </div>
         </div>
     )
 }
