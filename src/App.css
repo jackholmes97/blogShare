@@ -21,8 +21,31 @@ body {
   margin-top: 64px;
   align-items: center;
   width: 100%;
+  display: flex;
 }
-
+.about{
+  margin-top: 10px;
+}
+.about h1 {
+  font-family: 'Lobster', cursive;
+  background-image: linear-gradient(to bottom, #2196f3, #1c8be4, #1680d5, #1075c6, #076ab8);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 200px;
+}
+.about h2 {
+  margin-top: 10px;
+  font-size: 40px;
+}
+.about p, li {
+  margin-left: 150px;
+  margin-right: 150px;
+  font-size: 18px;
+  text-align: left;
+}
+.about-text {
+  margin-bottom: 100px;
+}
 .searchbar {
   height: 80px;
   margin-top: 10px;
