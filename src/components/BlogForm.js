@@ -6,7 +6,7 @@ function BlogForm({addBlog}) {
     const [blogAuthor, setBlogAuthor] = useState("")
     const [blogDescription, setBlogDescription] = useState("")
     const [blogURL, setBlogURL] = useState("")
-    const [blogThumbnail, setBlogThumbnail] = useState("https://res.cloudinary.com/practicaldev/image/fetch/s--qo_Wp38Z--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/e0nl7ziy1la7bpwj7rsp.png")
+    const [blogThumbnail, setBlogThumbnail] = useState("")
     const [blogDiscipline, setBlogDiscipline] = useState("all")
     const [blogPhase, setBlogPhase] = useState("all")
 
@@ -64,7 +64,7 @@ function BlogForm({addBlog}) {
             <input type="text" name="Blog Description" placeholder="Blog Description" value={blogDescription} onChange={addBlogDescription}/>
             <input type="text" name="Author" placeholder="Author" value={blogAuthor} onChange={addBlogAuthor}/>
             <input type="text" name="Blog URL" placeholder="Blog URL" value={blogURL} onChange={addBlogURL}/>
-            <input type="text" name="Thumbnail" placeholder={"https://res.cloudinary.com/practicaldev/image/fetch/s--qo_Wp38Z--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/e0nl7ziy1la7bpwj7rsp.png"} value={blogThumbnail} onChange={addBlogThumbnail}/>
+            <input type="text" name="Thumbnail" placeholder="Thumbnail URL" value={blogThumbnail} onChange={addBlogThumbnail}/>
             <select value={blogDiscipline} onChange={addBlogDiscipline}>
                 <option value="all">Select Discipline</option>
                 <option value="Software Engineer">Software Engineering</option>

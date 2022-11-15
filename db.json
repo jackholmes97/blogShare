@@ -189,6 +189,16 @@
       "discipline": "Data Science",
       "phase": "Phase 1",
       "id": 19
+    },
+    {
+      "title": "Flatiron Phase 4",
+      "author": "Tyler Charawell",
+      "description": "My experience with phase 4 was much smoother than phase 3. A big reason for this is because of all of the headache we went through learning Rack and the abundance of material in phase 3 previously.",
+      "link": "https://tylercharawell.medium.com/flatiron-phase-4-cba015e82c53",
+      "thumbnail": "",
+      "discipline": "Software Engineer",
+      "phase": "Phase 4",
+      "id": 20
     }
   ]
 }
