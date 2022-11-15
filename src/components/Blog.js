@@ -8,13 +8,13 @@ import { Button, CardActionArea, CardActions} from '@mui/material';
 export default function Blog({blog}) {
   return (
    <div className='blog-item'>
-        <Card sx={{ maxWidth: 345, height: 410, display: "flex", flexDirection: "column",
+        <Card sx={{ width: 345, height: 410, display: "flex", flexDirection: "column",
     justifyContent: "space-between"}}>
         <CardActionArea>
             <CardMedia
             component="img"
             height="140"
-            image={blog.thumbnail}
+            image={blog.thumbnail === "" ? "https://res.cloudinary.com/practicaldev/image/fetch/s--qo_Wp38Z--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/e0nl7ziy1la7bpwj7rsp.png" : blog.thumbnail}
             alt="green iguana"
             />
             <CardContent>

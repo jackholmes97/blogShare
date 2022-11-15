@@ -169,6 +169,36 @@
       "discipline": "Software Engineer",
       "phase": "Phase 2",
       "id": 17
+    },
+    {
+      "title": "Phase 3 of Flatiron",
+      "author": "Jessica Joseph",
+      "description": "This is my third project I created since starting my coding journey! It's crazy to think that I started with no knowledge of coding and now I have just completed my third project for FlatIron School.",
+      "link": "https://dev.to/jessicaajosephh/phase-3-of-flatiron-3pj8",
+      "thumbnail": "https://res.cloudinary.com/practicaldev/image/fetch/s--zCOnf_ny--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/70he1lva6wq5q6nnsm5c.jpeg",
+      "discipline": "Software Engineer",
+      "phase": "Phase 3",
+      "id": 18
+    },
+    {
+      "title": "My Journey to Data Science",
+      "author": "Anita Camlic",
+      "description": "My journey to data science has been anything but linear. If you asked me what I thought of mathematics or computer science when I was younger, I definitely would have said that I hated it.",
+      "link": "https://medium.com/@anitacamlic_76780/my-journey-to-data-science-1df7b9a42659",
+      "thumbnail": "https://miro.medium.com/max/720/1*GgxjbmewC7GHrSWaIifQLQ.jpeg",
+      "discipline": "Data Science",
+      "phase": "Phase 1",
+      "id": 19
+    },
+    {
+      "title": "Flatiron Phase 4",
+      "author": "Tyler Charawell",
+      "description": "My experience with phase 4 was much smoother than phase 3. A big reason for this is because of all of the headache we went through learning Rack and the abundance of material in phase 3 previously.",
+      "link": "https://tylercharawell.medium.com/flatiron-phase-4-cba015e82c53",
+      "thumbnail": "",
+      "discipline": "Software Engineer",
+      "phase": "Phase 4",
+      "id": 20
     }
   ]
 }

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, {useState} from 'react'
 import SideBar from './Sidebar'
 import BlogList from './BlogList'
 
