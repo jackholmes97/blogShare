@@ -8,7 +8,7 @@ import { Button, CardActionArea, CardActions} from '@mui/material';
 export default function Blog({blog}) {
   return (
    <div className='blog-item'>
-        <Card sx={{ maxWidth: 345, height: 410, display: "flex", flexDirection: "column",
+        <Card sx={{ width: 345, height: 410, display: "flex", flexDirection: "column",
     justifyContent: "space-between"}}>
         <CardActionArea>
             <CardMedia
