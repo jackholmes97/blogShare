@@ -5,7 +5,12 @@ import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import SearchIcon from '@mui/icons-material/Search';
-function SideBar({search, setSearch, filterByPhase, setFilterByPhase, filterByDiscipline, setFilterByDiscipline}) {
+function SideBar({search, setSearch, filterByPhase, setFilterByPhase, filterByDiscipline, setFilterByDiscipline, topFiveBlogs}) {
+
+    const renderFive = topFiveBlogs.map((blogs) => {
+        return <li key={blogs.id}>{blogs.title} By: {blogs.author}</li>
+    })
+
     return (
         <div className='sidebar'>
         <div className= "searchbar">
@@ -54,6 +59,10 @@ function SideBar({search, setSearch, filterByPhase, setFilterByPhase, filterByDi
                     <MenuItem value="Phase 4">Phase 4</MenuItem>
                 </Select>
         </FormControl>
+        <div className='top5'>
+            <h2>Most Viewed Blogs</h2>
+            <ol>{renderFive}</ol>
+        </div>
         </div>
     )
 }

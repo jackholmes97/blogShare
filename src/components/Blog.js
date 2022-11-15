@@ -5,7 +5,21 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions} from '@mui/material';
 
-export default function Blog({blog}) {
+export default function Blog({blog, views, setViews, handleViews}) {
+
+    function updateViews() {
+        const updateViewsObj = {
+            views: blog.views + 1
+        }
+        fetch(`http://localhost:3000/blogs/${blog.id}`, {
+            method: 'PATCH',
+            headers: {'Content-Type' : 'application/json'},
+            body: JSON.stringify(updateViewsObj)
+        })
+        .then(response => response.json())
+        .then(data => handleViews(data))
+    }
+
   return (
    <div className='blog-item'>
         <Card sx={{ width: 345, height: 410, display: "flex", flexDirection: "column",
@@ -33,9 +47,12 @@ export default function Blog({blog}) {
             </CardContent>
         </CardActionArea>
         <CardActions>
-            <Button size="small" color="primary" href={blog.link} target='_blank'>
+            <Button onClick={updateViews} size="small" color="primary" href={blog.link} target='_blank'>
             Read
             </Button>
+            <Typography variant="body2" color="text.secondary" sx={{align: 'inherit'}}>
+            {blog.views}: Views
+            </Typography>
         </CardActions>
         </Card>
 

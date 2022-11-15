@@ -25,11 +25,23 @@ function App() {
       .then(data => setBlogs([...blogs, data]))
   }
 
+  function handleViews(data) {
+    const updatedViews = blogs.map((blog)=> {
+      if(blog.id === data.id) {
+        return data;
+      }
+      else{
+        return blog;
+      }
+    })
+    setBlogs(updatedViews)
+  }
+
   return (
     <div className="App">
       <Header/>
       <Routes>
-        <Route path="/" element={<BlogPage blogs={blogs}/>} />
+        <Route path="/" element={<BlogPage blogs={blogs} handleViews = {handleViews}/>} />
         <Route path="/about" element={<About/>}/>
         <Route path="/blogform" element={<BlogForm addBlog={addBlog}/>}/>
       </Routes>
