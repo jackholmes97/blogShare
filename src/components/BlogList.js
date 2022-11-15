@@ -1,7 +1,7 @@
 import Blog from './Blog'
 import {Grid} from '@mui/material'
 
-export default function BlogList({blogs}) {
+export default function BlogList({blogs, views, setViews, handleViews}) {
 
     return(
         <div className='blog-list'>
@@ -13,7 +13,7 @@ export default function BlogList({blogs}) {
                 alignItems="flex-start"
             >
                 {blogs.map((blog) => {
-                    return <Blog key={blog.id} blog={blog} />
+                    return <Blog key={blog.id} blog={blog} views={views} setViews={setViews} handleViews={handleViews}/>
                 })}
             </Grid>
         </div>

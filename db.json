@@ -8,7 +8,8 @@
       "discipline": "Software Engineer",
       "link": "https://medium.com/@abeanadu/what-is-a-javascript-query-selector-11940ffa0f8d",
       "author": "Abena Adu",
-      "phase": "Phase 1"
+      "phase": "Phase 1",
+      "views": 0
     },
     {
       "id": 2,
@@ -18,7 +19,8 @@
       "discipline": "Software Engineer",
       "link": "https://medium.com/@alieladma2000/click-on-me-to-see-what-takes-place-db55dec8fc67",
       "author": "Ali Eladma",
-      "phase": "Phase 1"
+      "phase": "Phase 1",
+      "views": 1
     },
     {
       "id": 3,
@@ -28,7 +30,8 @@
       "discipline": "Software Engineer",
       "link": "https://medium.com/@availinggiraffe/api-what-b675ee082610",
       "author": "Andrew Thalheimer",
-      "phase": "Phase 1"
+      "phase": "Phase 1",
+      "views": 0
     },
     {
       "id": 4,
@@ -38,7 +41,8 @@
       "discipline": "Software Engineer",
       "link": "https://medium.com/@robotking134/fetch-from-a-total-beginner-e94e73c5c434",
       "author": "Angel Marte",
-      "phase": "Phase 1"
+      "phase": "Phase 1",
+      "views": 0
     },
     {
       "id": 5,
@@ -48,7 +52,8 @@
       "discipline": "Software Engineer",
       "link": "https://medium.com/@nardlearnstocode/f-is-for-functions-204fe13d08fe",
       "author": "Bernard Legaspi",
-      "phase": "Phase 1"
+      "phase": "Phase 1",
+      "views": 0
     },
     {
       "id": 6,
@@ -58,7 +63,8 @@
       "discipline": "Software Engineer",
       "link": "https://medium.com/@elainedoud/scope-e0d0a031ef6d",
       "author": "Elaine Doud",
-      "phase": "Phase 1"
+      "phase": "Phase 1",
+      "views": 0
     },
     {
       "id": 7,
@@ -68,7 +74,8 @@
       "discipline": "Software Engineer",
       "link": "https://medium.com/@elisasituhuang/javascript-debugging-and-error-messages-for-beginners-7ab50dc86c",
       "author": "Elisa Situ Huang",
-      "phase": "Phase 1"
+      "phase": "Phase 1",
+      "views": 0
     },
     {
       "id": 8,
@@ -78,7 +85,8 @@
       "discipline": "Software Engineer",
       "link": "https://medium.com/@emelizadaniels/dom-manipulation-what-is-it-exactly-1eb7abb07a25",
       "author": "Emily Daniels",
-      "phase": "Phase 1"
+      "phase": "Phase 1",
+      "views": 0
     },
     {
       "id": 9,
@@ -88,7 +96,8 @@
       "discipline": "Software Engineer",
       "link": "https://medium.com/@erikrussells/a-css-animation-1d5cc111c5a5",
       "author": "Erik Russell",
-      "phase": "Phase 1"
+      "phase": "Phase 1",
+      "views": 0
     },
     {
       "id": 10,
@@ -98,7 +107,8 @@
       "discipline": "Software Engineer",
       "link": "https://medium.com/@esclark/the-beauty-of-html-css-and-javascript-b2159ed28f1b",
       "author": "Ethan Clark",
-      "phase": "Phase 1"
+      "phase": "Phase 1",
+      "views": 0
     },
     {
       "id": 11,
@@ -108,7 +118,8 @@
       "discipline": "Software Engineer",
       "link": "https://medium.com/@jdholmes48/my-first-flatiron-school-project-ac7bd157549c",
       "author": "Jack Holmes",
-      "phase": "Phase 1"
+      "phase": "Phase 1",
+      "views": 2
     },
     {
       "id": 12,
@@ -118,7 +129,8 @@
       "discipline": "Software Engineer",
       "link": "https://dev.to/m_shkreli21/javascript-event-listeners-3h41",
       "author": "Mark Shkreli",
-      "phase": "Phase 1"
+      "phase": "Phase 1",
+      "views": 1
     },
     {
       "id": 13,
@@ -128,7 +140,8 @@
       "discipline": "Software Engineer",
       "link": "https://medium.com/@polyakovmaxim05/fetch-and-http-methods-7cc6f1a43e8d",
       "author": "Maxim Polyakov",
-      "phase": "Phase 1"
+      "phase": "Phase 1",
+      "views": 0
     },
     {
       "id": 14,
@@ -138,7 +151,8 @@
       "discipline": "Software Engineer",
       "link": "https://dreammachine.work/building-story-telling-applications-in-javascript-with-apis-flatiron-school-project-one-ede7f3648111",
       "author": "Raman Mama",
-      "phase": "Phase 1"
+      "phase": "Phase 1",
+      "views": 2
     },
     {
       "id": 15,
@@ -148,7 +162,8 @@
       "discipline": "Software Engineer",
       "link": "https://medium.com/@richmondnkansah/interaction-between-html-and-dom-8606d2be1024",
       "author": "Richmond Nkansah",
-      "phase": "Phase 1"
+      "phase": "Phase 1",
+      "views": 0
     },
     {
       "id": 16,
@@ -158,7 +173,8 @@
       "discipline": "Software Engineer",
       "link": "https://medium.com/@wyf990505/css-flexbox-28c9df7a3dcd",
       "author": "Yifei Wu",
-      "phase": "Phase 1"
+      "phase": "Phase 1",
+      "views": 0
     },
     {
       "title": "Flatiron Phase 2 - React",
@@ -168,7 +184,8 @@
       "thumbnail": "https://res.cloudinary.com/practicaldev/image/fetch/s--qo_Wp38Z--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/e0nl7ziy1la7bpwj7rsp.png",
       "discipline": "Software Engineer",
       "phase": "Phase 2",
-      "id": 17
+      "id": 17,
+      "views": 0
     },
     {
       "title": "Phase 3 of Flatiron",
@@ -178,7 +195,8 @@
       "thumbnail": "https://res.cloudinary.com/practicaldev/image/fetch/s--zCOnf_ny--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/70he1lva6wq5q6nnsm5c.jpeg",
       "discipline": "Software Engineer",
       "phase": "Phase 3",
-      "id": 18
+      "id": 18,
+      "views": 1
     },
     {
       "title": "My Journey to Data Science",
@@ -188,7 +206,8 @@
       "thumbnail": "https://miro.medium.com/max/720/1*GgxjbmewC7GHrSWaIifQLQ.jpeg",
       "discipline": "Data Science",
       "phase": "Phase 1",
-      "id": 19
+      "id": 19,
+      "views": 0
     },
     {
       "title": "Flatiron Phase 4",
@@ -198,7 +217,8 @@
       "thumbnail": "",
       "discipline": "Software Engineer",
       "phase": "Phase 4",
-      "id": 20
+      "id": 20,
+      "views": 0
     }
   ]
 }
