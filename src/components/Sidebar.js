@@ -8,7 +8,7 @@ import SearchIcon from '@mui/icons-material/Search';
 function SideBar({search, setSearch, filterByPhase, setFilterByPhase, filterByDiscipline, setFilterByDiscipline, topFiveBlogs}) {
 
     const renderFive = topFiveBlogs.map((blogs) => {
-        return <li key={blogs.id}>{blogs.title} By: {blogs.author}</li>
+        return <li key={blogs.id}><a href={blogs.link} target="_blank">{blogs.title}</a></li>
     })
 
     return (
@@ -16,6 +16,7 @@ function SideBar({search, setSearch, filterByPhase, setFilterByPhase, filterByDi
         <div className= "searchbar">
             <TextField
                 id="outlined-search"
+                sx={{background:"transparent"}}
                 label={<SearchIcon/>}
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
@@ -23,7 +24,7 @@ function SideBar({search, setSearch, filterByPhase, setFilterByPhase, filterByDi
             {/* <label htmlFor="search">Search Blogs</label>
             <input type="text" id="search" placeholder="Type a Blog Title..." value={search} onChange={(e) => setSearch(e.target.value)}/> */}
         </div>
-        <FormControl sx={{ m: 1, minWidth: 80 }} size="small">
+        <FormControl sx={{ m: 1, minWidth: 80, background: "transparent" }} size="small">
             <InputLabel id="discipline-filt">Discipline</InputLabel>
             <Select
                 labelId="discipline-filt"
@@ -41,7 +42,7 @@ function SideBar({search, setSearch, filterByPhase, setFilterByPhase, filterByDi
                 <MenuItem value="CyberSecurity">CyberSecurity</MenuItem>
             </Select>
         </FormControl>
-        <FormControl sx={{ m: 1, minWidth: 80 }} size="small">
+        <FormControl sx={{ m: 1, minWidth: 80, background: "transparent" }} size="small">
                 <InputLabel id="phase-filt">Phase</InputLabel>
                 <Select
                     labelId="phase-filt"
@@ -60,7 +61,7 @@ function SideBar({search, setSearch, filterByPhase, setFilterByPhase, filterByDi
                 </Select>
         </FormControl>
         <div className='top5'>
-            <h2>Most Viewed Blogs</h2>
+            <h2>Most Viewed</h2>
             <ol>{renderFive}</ol>
         </div>
         </div>

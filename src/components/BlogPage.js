@@ -37,7 +37,7 @@ export default function BlogPage({ blogs, handleViews }) {
 
     return (
         <div className='blog-page'>
-            <SideBar search={search} setSearch={setSearch} filterByPhase={filterByPhase} setFilterByPhase={setFilterByPhase} filterByDiscipline={filterByDiscipline} setFilterByDiscipline={setFilterByDiscipline} topFiveBlogs={topFiveBlogs} />
+            <SideBar search={search} setSearch={setSearch} filterByPhase={filterByPhase} setFilterByPhase={setFilterByPhase} filterByDiscipline={filterByDiscipline} setFilterByDiscipline={setFilterByDiscipline} topFiveBlogs={topFiveBlogs}/>
             <BlogList blogs={filteredBlogs} views={views} setViews={setViews} handleViews={handleViews} />
         </div>
     )

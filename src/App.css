@@ -14,6 +14,23 @@ body {
   height: 100%;
 }
 
+.new-blog-post h3 {
+  font-family: 'Lobster', cursive;
+  font-size: 40px;
+  color: rgb(33, 150, 243);
+}
+
+.top5 li, a {
+  text-align: left;
+  float: left;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  text-decoration: none;
+  color: rgb(33, 150, 243);
+}
+
 .blog-item{
   margin: 20px
 }
@@ -59,11 +76,12 @@ body {
   flex-direction: column;
   float: right;
   width: 17%;
-  top: 83px;
+  top: 84px;
   border-radius: 5px;
   margin-right: 5px;
   z-index: 100;
   box-shadow: 0 0 3px rgb(0,0,0);
+  margin-right: 15px;
 }
 
 .header {

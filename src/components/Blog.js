@@ -51,7 +51,7 @@ export default function Blog({blog, views, setViews, handleViews}) {
             Read
             </Button>
             <Typography variant="body2" color="text.secondary" sx={{align: 'inherit'}}>
-            {blog.views}: Views
+            {blog.views} views
             </Typography>
         </CardActions>
         </Card>
