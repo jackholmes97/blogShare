@@ -10,6 +10,7 @@ body {
   flex-direction: row-reverse;
   align-items: flex-start;
   background-image: linear-gradient(to bottom, #ffffff, #f3f3f3, #e6e6e6, #dadada, #cecece);
+  height: 100%;
 }
 
 .searchbar {
@@ -68,7 +69,7 @@ body {
   text-decoration: none;
 }
 
-.navLink :hover {
+.navLink:hover {
   color: aquamarine;
 }
 
