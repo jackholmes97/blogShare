@@ -86,7 +86,7 @@ function BlogForm({addBlog}) {
                 <MenuItem value="Phase 4">Phase 4</MenuItem>
             </TextField>
             </Box>
-            <Button sx={{ m: 1, p: 1, backgroundColor: "none", color: 'white', borderColor: 'white' }} className= "form-button" variant='outlined' type="submit">Add New Blog Post</Button>
+            <Button sx={{ m: 0.5, p: 1, backgroundColor: "none", color: 'white', borderColor: 'white' }} className= "form-button" variant='outlined' type="submit">Add New Blog Post</Button>
         </form>
         </div>
         </div>

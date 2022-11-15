@@ -14,6 +14,15 @@ body {
   height: 100%;
 }
 
+.blog-item{
+  margin: 20px
+}
+.blog-list{
+  margin-top: 64px;
+  align-items: center;
+  width: 100%;
+}
+
 .searchbar {
   height: 80px;
   margin-top: 10px;
@@ -73,12 +82,16 @@ body {
 .navLink:hover {
   color: aquamarine;
 }
+.new-blog-post {
+  margin-top: 100px;
+}
 
 .new-blog-container {
   width: 600px;
   height: 500px;
   padding: 20px;
-  border: 5px solid rgb(0, 188, 221, 0.5);
+  display: flex;
+  /* border: 5px solid rgb(0, 188, 221, 0.5); */
   margin: auto;
   align-content: center;
   background-color: rgba(33, 150, 243);
