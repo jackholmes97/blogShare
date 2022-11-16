@@ -54,7 +54,8 @@ function BlogForm({addBlog}) {
             link: blogURL,
             thumbnail: blogThumbnail,
             discipline: blogDiscipline,
-            phase: blogPhase
+            phase: blogPhase,
+            views: 0
         }
         clearForm()
         addBlog(newBlog)
