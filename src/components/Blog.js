@@ -4,6 +4,8 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions} from '@mui/material';
+import {LinkedinShareButton, TwitterShareButton, FacebookShareButton} from 'react-share';
+import {LinkedinIcon, TwitterIcon, FacebookIcon} from 'react-share';
 
 export default function Blog({blog, views, setViews, handleViews}) {
 
@@ -31,7 +33,7 @@ export default function Blog({blog, views, setViews, handleViews}) {
             image={blog.thumbnail === "" ? "https://res.cloudinary.com/practicaldev/image/fetch/s--qo_Wp38Z--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/e0nl7ziy1la7bpwj7rsp.png" : blog.thumbnail}
             alt="green iguana"
             />
-            <CardContent>
+            <CardContent sx={{minHeight:'26vh'}}>
             <Typography gutterBottom variant="h5" component="div">
                 {blog.title}
             </Typography>
@@ -53,6 +55,17 @@ export default function Blog({blog, views, setViews, handleViews}) {
             <Typography variant="body2" color="text.secondary" sx={{align: 'inherit'}}>
             {blog.views} views
             </Typography>
+            <div className='share'>
+                <LinkedinShareButton className='icon' url={blog.link} title={blog.title} summary={blog.description} source={blog.link}> 
+                    <LinkedinIcon size={30} round />
+                </LinkedinShareButton>
+                <TwitterShareButton className='icon' url={blog.link} title={blog.title}>
+                    <TwitterIcon size={30} round />
+                </TwitterShareButton>
+                <FacebookShareButton className='icon' url={blog.link} quote={blog.title}>
+                    <FacebookIcon size={30} round />
+                </FacebookShareButton>
+            </div>
         </CardActions>
         </Card>
 
