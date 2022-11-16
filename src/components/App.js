@@ -2,7 +2,8 @@ import React, {useState, useEffect} from 'react'
 import '../App.css';
 import BlogPage from './BlogPage';
 import About from './About'
-import {Routes, Route} from 'react-router-dom'
+import {Route, useLocation} from 'react-router-dom'
+import SlideRoutes from 'react-slide-routes'
 import Header from './Header';
 import BlogForm from './BlogForm'
 
@@ -37,14 +38,16 @@ function App() {
     setBlogs(updatedViews)
   }
 
+  const location = useLocation();
+
   return (
     <div className="App">
       <Header/>
-      <Routes>
-        <Route path="/" element={<BlogPage blogs={blogs} handleViews = {handleViews}/>} />
+      <SlideRoutes location={location} duration={400}>
+        <Route path="/" element={<BlogPage blogs={blogs} handleViews = {handleViews} exact/>} />
         <Route path="/about" element={<About/>}/>
         <Route path="/blogform" element={<BlogForm addBlog={addBlog}/>}/>
-      </Routes>
+      </SlideRoutes>
     </div>
   );
 }
