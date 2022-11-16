@@ -33,14 +33,14 @@ export default function Blog({blog, views, setViews, handleViews}) {
             image={blog.thumbnail === "" ? "https://res.cloudinary.com/practicaldev/image/fetch/s--qo_Wp38Z--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/e0nl7ziy1la7bpwj7rsp.png" : blog.thumbnail}
             alt="green iguana"
             />
-            <CardContent sx={{minHeight:'26vh'}}>
+            <CardContent sx={{minHeight:'26vh', overflow: "scroll"}}>
             <Typography gutterBottom variant="h5" component="div">
                 {blog.title}
             </Typography>
             <Typography variant="body2" color="text.secondary">
                 {blog.discipline}
             </Typography>
-            <Typography variant="body2" color="text.secondary" sx={{height: 100, overflow: "scroll"}}>
+            <Typography variant="body2" color="text.secondary" sx={{height: 100}}>
                 By: {blog.author}
                 <br></br>
                 <br></br>

@@ -5,6 +5,11 @@ import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import SearchIcon from '@mui/icons-material/Search';
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
+import Typography from '@mui/material/Typography';
 function SideBar({search, setSearch, filterByPhase, setFilterByPhase, filterByDiscipline, setFilterByDiscipline, topFiveBlogs}) {
 
     const renderFive = topFiveBlogs.map((blogs) => {
@@ -61,7 +66,7 @@ function SideBar({search, setSearch, filterByPhase, setFilterByPhase, filterByDi
                 </Select>
         </FormControl>
         <div className='top5'>
-            <h2>Most Viewed</h2>
+            <Typography sx={{mt:"10px"}} variant='h2' fontSize={30} gutterBottom>Most Viewed</Typography>
             <ol>{renderFive}</ol>
         </div>
         </div>
