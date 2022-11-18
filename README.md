@@ -1,6 +1,15 @@
-# Getting Started with Create React App
+# BlogShare
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+BlogSpace a site that was built by Flatiron students, for Flatiron students. It is an online database meant to help students explore different perspectives on a wide variety of topics covered at Flatiron School. This website was made as a culminating project for our 2nd Phase using React.js and includes resources from: Google Fonts, Material UI, React Router 6, and Slide Routes.
+
+Here you can: 
+    * Browse blog posts from past and current students of Flatiron School across all disciplines and phase.
+    * Search for specific topics of interest as well as filter your list by discipline and phase.
+    * Submit your own blog post assignment to our database of over 75 submissions.
+
+We hope this is helpful tool. Happy Browsing!
+
+	-The developers responsible (Jack Holmes & Mark Shkreli)
 
 ## Available Scripts
 
