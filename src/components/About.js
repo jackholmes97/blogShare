@@ -7,7 +7,9 @@ import Typography from '@mui/material/Typography';
 export default function About() {
     return (
         <div className="about">
-            <h1>BlogShare</h1>
+            <div className='about-banner'>
+                <h1>BlogShare</h1>
+            </div>
             <div className='about-text'>
                 <Typography variant='h2' gutterBottom>What is BlogShare?</Typography>
                 <br></br>
@@ -18,8 +20,8 @@ export default function About() {
                     <ul>
                         <li>Browse blog posts from past and current Flatiron School students across all disciplines and phases.</li>
                         <li>Search for specific topics of interest as well as filter your list by discipline and phase.</li>
-                        <li>Submit your own blog post assignment to our database of over 100 submissions.</li>
-                        <li>Share any blog post to your LinkedIn, Facebook, or Twitter Feed</li>
+                        <li>Submit your own blog post assignment to our growing database of 75+ submissions.</li>
+                        <li>Share any blog post to your LinkedIn, Facebook, or Twitter feed</li>
                     </ul>
                 </Typography>
                 <br></br>
@@ -27,7 +29,7 @@ export default function About() {
                 <br></br>
                 <Typography variant='body1' gutterBottom>
                     <ul className='signoff'>
-                        <li className="signoff-content">Jack Holmes & Mark Shkreli</li>
+                        <li className="signoff-content">Jack & Mark</li>
                     </ul>
                 </Typography>
             </div>

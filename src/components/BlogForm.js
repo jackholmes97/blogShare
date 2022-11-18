@@ -63,33 +63,33 @@ function BlogForm({addBlog}) {
 
     return (
         <div className='new-blog-post'>
-        <h3>New Blog Post</h3>
-        <div className= "new-blog-container">
-        <form onSubmit={handleSubmit}>
-            <TextField sx={{ m: 1, background:"transparent" }} className = "form-input" id="margin-normal" label="Blog Title" placeholder="Enter Title..." value={blogTitle} onChange={addBlogTitle} required/>
-            <TextField sx={{ m: 1, background:"transparent"}} className = "form-input" label="Blog Description" placeholder="Enter Description..." value={blogDescription} onChange={addBlogDescription} required/>
-            <TextField sx={{ m: 1, background:"transparent"}} className = "form-input" label="Author" placeholder="Enter Author..." value={blogAuthor} onChange={addBlogAuthor} required/>
-            <TextField sx={{ m: 1, background:"transparent"}} className = "form-input" label="Blog URL" placeholder="Enter URL..." value={blogURL} onChange={addBlogURL} required/>
-            <TextField sx={{ m: 1, background:"transparent"}} className = "form-input" id="margin-normal" label="Thumbnail" placeholder="Enter Thumbnail..." value={blogThumbnail} onChange={addBlogThumbnail}/>
-            <Box sx={{ p: 0.5 , m: 0.5, display: 'flex', background:"transparent"}}>
-            <TextField sx={{ m: 0.5, background:"transparent"}} className="form-dropdown" id="margin-none" select value={blogDiscipline} onChange={addBlogDiscipline} helperText='Please select your discipline' required>
-                <MenuItem value="all" label="all">Select Discipline</MenuItem>
-                <MenuItem value="Software Engineer" label="Software Engineer">Software Engineer</MenuItem>
-                <MenuItem value="Data Science" label="Data Science">Data Science</MenuItem>
-                <MenuItem value="UI/UX Design" label="UI/UX Design">UI/UX Design</MenuItem>
-                <MenuItem value="CyberSecurity" label="Cyber Security">CyberSecurity</MenuItem>
-            </TextField>
-            <TextField sx={{ m: 0.5, background:"transparent"}} className= "form-dropdown" select value={blogPhase} onChange={addBlogPhase} helperText="Please select your phase" required>
-                <MenuItem value="all">Select Phase</MenuItem>
-                <MenuItem value="Phase 1">Phase 1</MenuItem>
-                <MenuItem value="Phase 2">Phase 2</MenuItem>
-                <MenuItem value="Phase 3">Phase 3</MenuItem>
-                <MenuItem value="Phase 4">Phase 4</MenuItem>
-            </TextField>
-            </Box>
-            <Button sx={{ m: 0.5, p: 1, backgroundColor: "none", borderColor: 'white' }} className= "form-button" variant='outlined' type="submit">{<AddIcon/>} Add</Button>
-        </form>
-        </div>
+            <h3>New Blog Post</h3>
+            <div className= "new-blog-container">
+                <form onSubmit={handleSubmit}>
+                    <TextField sx={{ m: 1, background:"transparent" }} className = "form-input" id="margin-normal" label="Blog Title" placeholder="Enter Title..." value={blogTitle} onChange={addBlogTitle} required/>
+                    <TextField sx={{ m: 1, background:"transparent"}} className = "form-input" label="Blog Description" placeholder="Enter Description..." value={blogDescription} onChange={addBlogDescription} required/>
+                    <TextField sx={{ m: 1, background:"transparent"}} className = "form-input" label="Author" placeholder="Enter Author..." value={blogAuthor} onChange={addBlogAuthor} required/>
+                    <TextField sx={{ m: 1, background:"transparent"}} className = "form-input" label="Blog URL" placeholder="Enter URL..." value={blogURL} onChange={addBlogURL} required/>
+                    <TextField sx={{ m: 1, background:"transparent"}} className = "form-input" id="margin-normal" label="Thumbnail" placeholder="Enter Thumbnail..." value={blogThumbnail} onChange={addBlogThumbnail}/>
+                    <Box sx={{ p: 0.5 , m: 0.5, display: 'flex', background:"transparent"}}>
+                        <TextField sx={{ m: 0.5, background:"transparent"}} className="form-dropdown" id="margin-none" select value={blogDiscipline} onChange={addBlogDiscipline} helperText='Please select your discipline' required>
+                            <MenuItem value="all" label="all">Select Discipline</MenuItem>
+                            <MenuItem value="Software Engineer" label="Software Engineer">Software Engineer</MenuItem>
+                            <MenuItem value="Data Science" label="Data Science">Data Science</MenuItem>
+                            <MenuItem value="UI/UX Design" label="UI/UX Design">UI/UX Design</MenuItem>
+                            <MenuItem value="CyberSecurity" label="Cyber Security">CyberSecurity</MenuItem>
+                        </TextField>
+                        <TextField sx={{ m: 0.5, background:"transparent"}} className= "form-dropdown" select value={blogPhase} onChange={addBlogPhase} helperText="Please select your phase" required>
+                            <MenuItem value="all">Select Phase</MenuItem>
+                            <MenuItem value="Phase 1">Phase 1</MenuItem>
+                            <MenuItem value="Phase 2">Phase 2</MenuItem>
+                            <MenuItem value="Phase 3">Phase 3</MenuItem>
+                            <MenuItem value="Phase 4">Phase 4</MenuItem>
+                        </TextField>
+                    </Box>
+                    <Button sx={{ m: 0.5, p: 1, backgroundColor: "none", borderColor: 'white' }} className= "form-button" variant='outlined' type="submit">{<AddIcon/>} Add</Button>
+                </form>
+            </div>
         </div>
     )
 }
