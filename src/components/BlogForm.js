@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
-import { MenuItem } from '@mui/material';
+import { MenuItem, Typography } from '@mui/material';
 import Button from '@mui/material/Button';
 import AddIcon from '@mui/icons-material/Add';
+import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 function BlogForm({addBlog}) {
 
     const [blogTitle, setBlogTitle] = useState("")
@@ -13,6 +14,15 @@ function BlogForm({addBlog}) {
     const [blogThumbnail, setBlogThumbnail] = useState("")
     const [blogDiscipline, setBlogDiscipline] = useState("all")
     const [blogPhase, setBlogPhase] = useState("all")
+    const [isAlertVisible, setIsAlertVisible ] = useState(false);
+
+    const handleButtonClick = () => {
+        setIsAlertVisible(true);
+
+        setTimeout(() => {
+            setIsAlertVisible(false);
+        }, 3000);
+    }
 
     function clearForm() {
         setBlogTitle("")
@@ -59,6 +69,7 @@ function BlogForm({addBlog}) {
         }
         clearForm()
         addBlog(newBlog)
+        handleButtonClick();
     }
 
     return (
@@ -88,6 +99,9 @@ function BlogForm({addBlog}) {
                         </TextField>
                     </Box>
                     <Button sx={{ m: 0.5, p: 1, backgroundColor: "none", borderColor: 'white' }} className= "form-button" variant='outlined' type="submit">{<AddIcon/>} Add</Button>
+                    {isAlertVisible && <div className='alert-container'>
+                        <div className='alert-inner'>{<CheckCircleOutlineIcon sx={{color:"rgb(33, 150, 243)", fontSize:50}}/>}<Typography variant='h3' gutterBottom> Posted!</Typography></div>
+                    </div>}  
                 </form>
             </div>
         </div>
