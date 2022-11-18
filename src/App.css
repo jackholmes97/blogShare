@@ -180,6 +180,7 @@ body {
 
 .new-blog-post h3 {
   margin-bottom: 5px;
+  font-size: 60px;
 }
 
 .new-blog-container {
@@ -187,13 +188,14 @@ body {
   height: 500px;
   padding: 20px;
   display: flex;
-  /* border: 5px solid rgb(0, 188, 221, 0.5); */
+  /* border: 1px solid rgb(193, 193, 193); */
   margin: auto;
   margin-top: 20px;
   align-content: center;
   background-color: white;
-  border-radius: 20px;
+  border-radius: 10px;
   margin-bottom: 20px;
+  box-shadow: 0 0 5px rgb(165, 165, 165);
 }
 
 .MuiFormControl-root {
